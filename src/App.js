@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Iframe from 'react-iframe';
 import Draggable from 'react-draggable';
-import { Resizable } from 'react-resizable';
+import { ResizableBox } from 'react-resizable';
 import './style.css';
 
 function App() {
