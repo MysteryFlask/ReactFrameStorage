@@ -45,7 +45,7 @@ function App() {
       <div className="frame-container">
         {frames.map((frame, index) => (
           <Draggable key={index} handle=".drag-handle">
-            <Resizable
+            <ResizableBox
               defaultSize={{ width: 400, height: 400 }}
               minWidth={100}
               minHeight={100}
