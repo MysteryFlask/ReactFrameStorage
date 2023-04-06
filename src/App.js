@@ -45,20 +45,20 @@ function App() {
       <div className="frame-container">
         {frames.map((frame, index) => (
           <Draggable key={index} handle=".drag-handle">
-			<Resizable
-			  defaultSize={{ width: 400, height: 400 }}
-			  minWidth={100}
-			  minHeight={100}
-			  handleStyles={{ bottomLeft: { cursor: 'se-resize' } }}
-			  handleComponent={{ bottomLeft: <div className="resize-handle" /> }}
-		    >
-			 <div className="frame">
-			   <div className="drag-handle"></div>
-			   <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
-			   <Iframe url={frame.url} />
-			 </div>
-		    </Resizable>
-		  </Draggable>
+            <Resizable
+              defaultSize={{ width: 400, height: 400 }}
+              minWidth={100}
+              minHeight={100}
+              handleStyles={{ bottomLeft: { cursor: 'se-resize' } }}
+              handleComponent={{ bottomLeft: <div className="resize-handle" /> }}
+            >
+              <div className="frame">
+                <div className="drag-handle"></div>
+                <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
+                <Iframe url={frame.url} />
+              </div>
+            </Resizable>
+          </Draggable>
         ))}
       </div>
     </div>
