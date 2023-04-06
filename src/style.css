@@ -1,6 +1,7 @@
+html { padding: 0 }
+
 body {
   background: linear-gradient(to bottom, #fa7055, #d97614);
-  html { padding: 0 }
   height: 100vh; width: 100vw;
 }
 
