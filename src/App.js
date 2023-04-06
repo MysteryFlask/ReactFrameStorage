@@ -57,7 +57,7 @@ function App() {
                 <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
                 <Iframe url={frame.url} />
               </div>
-            </Resizable>
+            </ResizableBox>
           </Draggable>
         ))}
       </div>
