@@ -46,11 +46,9 @@ function App() {
         {frames.map((frame, index) => (
           <Draggable key={index} handle=".drag-handle">
             <ResizableBox
-              defaultSize={{ width: 400, height: 400 }}
-              minWidth={100}
-              minHeight={100}
-              handleStyles={{ bottomLeft: { cursor: 'se-resize' } }}
-              handleComponent={{ bottomLeft: <div className="resize-handle" /> }}
+              width={400}
+	      height={400}
+              minConstraints={100, 100}
             >
               <div className="frame">
                 <div className="drag-handle"></div>
