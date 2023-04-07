@@ -3,6 +3,7 @@ import Iframe from 'react-iframe';
 import Draggable from 'react-draggable';
 import { ResizableBox } from 'react-resizable';
 import './style.css';
+import 'react-resizable/css/styles.css'
 
 function App() {
   const [frames, setFrames] = useState([]);
