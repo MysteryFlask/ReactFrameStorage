@@ -53,6 +53,12 @@ body {
   flex-wrap: wrap;
 }
 
+.frame-container iframe {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .react-draggable {
   position: relative;
   z-index: 999;
