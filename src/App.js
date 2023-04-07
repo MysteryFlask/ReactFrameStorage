@@ -51,11 +51,9 @@ function App() {
 	      height={400}
               minConstraints={100, 100}
             >
-              <div className="frame">
-                <div className="drag-handle"></div>
-                <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
-                <Iframe url={frame.url} />
-              </div>
+              <div className="drag-handle"></div>
+              <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
+              <Iframe url={frame.url} />
             </ResizableBox>
           </Draggable>
         ))}
