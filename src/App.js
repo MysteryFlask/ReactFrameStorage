@@ -45,6 +45,7 @@ function App() {
       </div>
       <div className="frame-container">
         {frames.map((frame, index) => (
+	  <Draggable key={index} handle=".drag-handle">
 	    <ResizableBox
 	      width={400}
 	      height={400}
@@ -54,6 +55,7 @@ function App() {
 	      <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
 	      <Iframe url={frame.url} />
 	    </ResizableBox>
+	  </Draggable>
         ))}
       </div>
     </div>
