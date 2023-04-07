@@ -47,8 +47,8 @@ function App() {
         {frames.map((frame, index) => (
 	  <Draggable key={index} handle=".drag-handle">
 	    <ResizableBox
-	      width={300}
-	      height={150}
+	      width={315}
+	      height={158}
 	      minConstraints={100, 100}
 	    >
 	      <div className="drag-handle"></div>
