@@ -6,6 +6,7 @@ html {
 body {
   background: linear-gradient(to bottom, #fa7055, #d97614);
   height: 100%; width: 100%;
+  overflow: hidden;
 }
 
 .resize-handle {
