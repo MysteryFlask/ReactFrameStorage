@@ -47,7 +47,7 @@ function App() {
         {frames.map((frame, index) => (
 	  <Draggable key={index} handle=".drag-handle">
 	    <ResizableBox
-	      minConstraints={100, 100}
+	      minConstraints={[100, 100]}
 	    >
 	      <div className="drag-handle"></div>
 	      <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
