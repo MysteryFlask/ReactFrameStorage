@@ -45,15 +45,14 @@ function App() {
       </div>
       <div className="frame-container">
         {frames.map((frame, index) => (
-	  <Draggable key={index} handle=".drag-handle">
-	    <ResizableBox
-	      minConstraints={[100, 100]}
-	    >
-	      <div className="drag-handle"></div>
-	      <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
-	      <Iframe url={frame.url} />
-	    </ResizableBox>
-	  </Draggable>
+	  <ResizableBox
+	     	minConstraints={[100, 100]}
+	     	draggableOpts={{ handle: ".drag-handle" }}
+	      >
+	      	<div className="drag-handle"></div>
+	    <button className="close-button" onClick={() => removeFrame(frame)}>X</button>
+	    <Iframe url={frame.url} />
+	  </ResizableBox>
         ))}
       </div>
     </div>
