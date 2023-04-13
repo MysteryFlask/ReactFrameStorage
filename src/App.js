@@ -51,8 +51,8 @@ function App() {
           <ResizableBox
             width={200}
             height={200}
-            minConstraints={[100, 100]}
-            maxConstraints={[300, 300]}
+            minConstraints={[10, 10]}
+            maxConstraints={[1000, 1000]}
           >
             <div className="resize-drag-content">
               <div className="drag-handle" id={`.drag-handle-${index}`}></div>
