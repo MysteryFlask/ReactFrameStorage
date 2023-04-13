@@ -57,7 +57,7 @@ body {
   box-sizing: border-box;
 }
 
-.react-draggable {
+.react-resizable {
   position: relative;
   z-index: 999;
   border: 4px solid #4ad1a8;
