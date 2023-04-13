@@ -55,7 +55,7 @@ function App() {
             maxConstraints={[1000, 1000]}
           >
             <div className="resize-drag-content">
-              <div className="drag-handle" id={`.drag-handle-${index}`}></div>
+              <div className="drag-handle" id={`drag-handle-${index}`}></div>
               <button
                 className="close-button"
                 onClick={() => removeFrame(frame)}
